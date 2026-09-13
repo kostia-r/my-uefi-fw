@@ -1,0 +1,25 @@
+{
+    "folders": [
+        {
+            "name": "MyUefiFw",
+            "path": "."
+        },
+        {
+            "name": "EDK2",
+            "path": "../edk2"
+        }
+    ],
+
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/__pycache__": true
+        },
+
+        "search.exclude": {
+            "**/Build": true,
+            "**/build": true,
+            "**/__pycache__": true
+        }
+    }
+}

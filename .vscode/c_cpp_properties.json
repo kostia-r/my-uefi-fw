@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "name": "UEFI X64",
+
+            "compilerPath": "/usr/bin/gcc",
+
+            "cStandard": "c11",
+            "intelliSenseMode": "linux-gcc-x64",
+
+            "defines": [
+                "MDE_CPU_X64"
+            ],
+
+            "includePath": [
+                "${workspaceFolder:MyUefiFw}/MyUefiFwPkg/Include",
+
+                "${workspaceFolder:EDK2}/MdePkg/Include",
+                "${workspaceFolder:EDK2}/MdePkg/Include/X64",
+
+                "${workspaceFolder:EDK2}/MdeModulePkg/Include",
+
+                "${workspaceFolder:EDK2}/OvmfPkg/Include",
+
+                "${workspaceFolder:EDK2}/UefiCpuPkg/Include"
+            ],
+
+            "browse": {
+                "path": [
+                    "${workspaceFolder:MyUefiFw}",
+                    "${workspaceFolder:EDK2}"
+                ],
+
+                "limitSymbolsToIncludedHeaders": false
+            }
+        }
+    ],
+
+    "version": 4
+}

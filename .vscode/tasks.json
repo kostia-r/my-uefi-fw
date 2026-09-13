@@ -1,0 +1,75 @@
+{
+    "version": "2.0.0",
+
+    "tasks": [
+        {
+            "label": "UEFI: Build",
+            "type": "shell",
+
+            "command": "make build",
+
+            "options": {
+                "cwd": "${workspaceFolder:MyUefiFw}"
+            },
+
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+
+            "problemMatcher": []
+        },
+
+        {
+            "label": "UEFI: Run QEMU",
+            "type": "shell",
+
+            "command": "make run",
+
+            "options": {
+                "cwd": "${workspaceFolder:MyUefiFw}"
+            },
+
+            "problemMatcher": []
+        },
+
+        {
+            "label": "UEFI: Reset NVRAM",
+            "type": "shell",
+
+            "command": "make reset-vars",
+
+            "options": {
+                "cwd": "${workspaceFolder:MyUefiFw}"
+            },
+
+            "problemMatcher": []
+        },
+
+        {
+            "label": "UEFI: Clean",
+            "type": "shell",
+
+            "command": "make clean",
+
+            "options": {
+                "cwd": "${workspaceFolder:MyUefiFw}"
+            },
+
+            "problemMatcher": []
+        },
+
+        {
+            "label": "UEFI: Distclean",
+            "type": "shell",
+
+            "command": "make distclean",
+
+            "options": {
+                "cwd": "${workspaceFolder:MyUefiFw}"
+            },
+
+            "problemMatcher": []
+        }
+    ]
+}
